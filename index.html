@@ -1,0 +1,51 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Morse Code ↔ Text Converter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="main-title">Morse Code ↔ Text Converter</h1>
+    <div class="theme-toggle-wrapper">
+      <input type="checkbox" id="toggle-theme" />
+      <label for="toggle-theme" class="theme-toggle">🌙</label>
+      <button id="modeInfoBtn" class="info-btn" aria-label="About dark/light mode">ℹ️</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="block">
+      <h2>🕹️ Morse Code</h2>
+      <textarea id="morseInput"
+                placeholder="Morse code… example: … -- .. .-.. . "
+                spellcheck="false"></textarea>
+      <div class="actions">
+        <button onclick="copyText('morseInput')">Copy</button>
+        <button id="playMorseBtn" onclick="playMorse()">Play 🔊</button>
+        <button onclick="clearMorse()">Clear</button>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2>🔤 Text</h2>
+      <textarea id="textInput"
+                placeholder="Type your text here… example: smile"></textarea>
+      <div class="actions">
+        <button onclick="copyText('textInput')">Copy</button>
+        <button onclick="downloadText()">Download</button>
+        <button onclick="clearText()">Clear</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <button class="convert-btn" onclick="convert()">Convert ↔</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
