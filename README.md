@@ -15,3 +15,41 @@ Open the `index.html` file in any modern browser to use the Morse Code Generator
 
 ## 📁 Project Structure
 
+├── index.html # Main HTML file
+├── style.css # Styles for the UI
+└── script.js # JavaScript logic for text-to-Morse conversion
+
+
+## 🖥️ How to Use
+
+1. Download or clone this repository.
+2. Open `index.html` in your browser.
+3. Type your message in the input field.
+4. See the Morse code translation appear instantly.
+
+## 📱 Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript (ES6)
+
+## 📌 Example
+
+**Input:**
+
+HELLO WORLD
+
+**Output:**
+
+.... . .-.. .-.. --- / .-- --- .-. .-.. -..
+
+## 📷 Screenshots
+
+Dark Mode
+
+![image](https://github.com/user-attachments/assets/8aa742b6-bc5f-44a3-9826-40075bdb0f7d)
+
+Light Mode
+
+![image](https://github.com/user-attachments/assets/c8b126b4-42c1-4223-85ed-f37bee5f63cb)
+
